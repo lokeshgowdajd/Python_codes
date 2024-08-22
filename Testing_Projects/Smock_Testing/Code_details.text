@@ -1,0 +1,51 @@
+Importing Flask and jsonify
+Python
+
+"from flask import Flsk, jsonify"
+AI-generated code. Review and use carefully. More info on FAQ.
+Flask: This is the main class from the Flask framework used to create web applications.
+jsonify: This function converts Python dictionaries into JSON responses, which are useful for APIs.
+Creating the Flask Application
+Python
+
+"app = Flask(__name__)"
+AI-generated code. Review and use carefully. More info on FAQ.
+app: This variable is an instance of the Flask class. It represents the web application and acts as a central registry for the view functions, 
+URL rules, and configurations.
+Defining Routes and View Functions
+Home Route
+Python
+
+""@app.route('/')
+def home():
+    return jsonify(message="Welcome to the Home Page!")""
+AI-generated code. Review and use carefully. More info on FAQ.
+@app.route(‘/’): This decorator maps the URL / (the home page) to the home function.
+home(): This function is called when the home page is accessed. It returns a JSON response with a welcome message.
+Login Route
+
+
+"@app.route('/login')
+def login():
+    return jsonify(message="Login Page")""
+AI-generated code. Review and use carefully. More info on FAQ.
+@app.route(‘/login’): This decorator maps the URL /login to the login function.
+login(): This function is called when the login page is accessed. It returns a JSON response with a login message.
+Dashboard Route
+Python
+
+@app.route('/dashboard')
+def dashboard():
+    return jsonify(message="Dashboard")
+AI-generated code. Review and use carefully. More info on FAQ.
+@app.route(‘/dashboard’): This decorator maps the URL /dashboard to the dashboard function.
+dashboard(): This function is called when the dashboard page is accessed. It returns a JSON response with a dashboard message.
+Running the Application
+Python
+
+"if __name__ == '__main__':
+    app.run(debug=True)"
+AI-generated code. Review and use carefully. More info on FAQ.
+if name == ‘main’: This ensures that the Flask application runs only if the script is executed directly (not imported as a module).
+app.run(debug=True): This starts the Flask development server with debug mode enabled. Debug mode provides detailed error messages and 
+auto-reloads the server when code changes.
