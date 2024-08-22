@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 data=[12,455,5555,555,214,45]
 
-"""plt.hist(data)
+plt.hist(data)
 plt.title("data for visuvazed")
 plt.xlabel("volume")
 plt.ylabel("mass")
@@ -27,4 +27,4 @@ ax.set_zlabel('Z')
 ax.view_init(60, 35)  # Adjust the view angle
 
 plt.show()
-plt.close()"""
+plt.close()
