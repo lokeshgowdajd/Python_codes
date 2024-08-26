@@ -11,7 +11,6 @@ def greet():
     username = request.form['username']
     password = request.form['password']
     
-    # Here you can add logic to check credentials or perform other actions
     if username == "admin" and password == "secret":
         return f"Hello, {username}! You have successfully logged in."
     else:
